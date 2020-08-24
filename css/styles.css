@@ -133,28 +133,27 @@ body {
   justify-content: center;
 }
 .contact-list-item-link {
-  display: block;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--title-secondery-color);
 }
 
 .contact-list-item-link:hover,
 .contact-list-item-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
+
 .contact-list-item-link svg:hover,
 .contact-list-item-link svg:focus {
   fill: var(--accent-color);
-}
-.contact-list-item-link {
-  display: flex;
-  justify-items: center;
-  align-items: center;
+  color: var(--accent-color);
 }
 
 .contact-list-item {
@@ -168,14 +167,12 @@ body {
   padding: 0px;
   margin-right: 10px;
   fill: var(--title-secondery-color);
-  fill: currentColor;
 }
 .smartphone {
   display: block;
   padding: 0px;
   margin-right: 10px;
   fill: var(--title-secondery-color);
-  fill: currentColor;
 }
 
 .contact-list-item:not(:last-child) {
@@ -237,7 +234,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-dark-theme-color);
