@@ -123,7 +123,6 @@ body {
 .hedder-utils {
   display: flex;
   box-sizing: border-box;
-
   margin-left: 0;
   margin-right: 0;
 }
@@ -132,9 +131,15 @@ body {
   align-items: center;
   justify-content: center;
 }
-.contact-list-item-link {
+.contact-list-item {
   display: flex;
   justify-items: center;
+  align-items: center;
+}
+.contact-list-item-link {
+  display: flex;
+  transition: 250ms var(--transition-timing-function);
+  justify-content: center;
   align-items: center;
   font-style: normal;
   font-weight: 500;
@@ -155,24 +160,10 @@ body {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
-
-.contact-list-item {
-  position: relative;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-.envelope-hedder {
+.contact-name {
   display: block;
-  padding: 0px;
+  text-align: center;
   margin-right: 10px;
-  fill: var(--title-secondery-color);
-}
-.smartphone {
-  display: block;
-  padding: 0px;
-  margin-right: 10px;
-  fill: var(--title-secondery-color);
 }
 
 .contact-list-item:not(:last-child) {
@@ -481,6 +472,7 @@ body {
   display: block;
   margin-right: 70px;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 .logo-fotter-mark {
   display: block;
