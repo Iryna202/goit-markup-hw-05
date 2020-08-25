@@ -5,6 +5,7 @@
   --title-dark-theme-color: #ffffff;
   --title-secondery-color: #757575;
   --accent-color: #2196f3;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 html {
   box-sizing: border-box;
@@ -196,6 +197,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -624,7 +626,8 @@ body {
 .projects-list-item:nth-child(3n) {
   margin-right: 0px;
 }
-.projects-list-item:hover .overlay {
+.projects-list-item:hover .overlay,
+.projects-list-item:focus .overlay {
   opacity: 1;
   top: 0;
   left: 0;
@@ -695,7 +698,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--title-light-theme-color);
   margin-bottom: 4px;
@@ -704,7 +706,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 187% */
   letter-spacing: 0.03em;
   color: var(--title-secondery-color);
 }
