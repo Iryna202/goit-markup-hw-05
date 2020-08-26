@@ -619,6 +619,7 @@ body {
   padding-bottom: 50px;
 }
 .gallery-btn-items {
+  display: block;
 }
 .gallery-btn-items-name {
   display: block;
