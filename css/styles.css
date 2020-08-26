@@ -153,18 +153,19 @@ body {
 .contact-list-item-link:hover,
 .contact-list-item-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
+  /*fill: var(--accent-color);*/
 }
 
 .contact-list-item-link svg:hover,
 .contact-list-item-link svg:focus {
   fill: var(--accent-color);
-  color: var(--accent-color);
+  /*color: var(--accent-color);*/
 }
 .contact-name {
   display: block;
   text-align: center;
   margin-right: 10px;
+  fill: var(--title-secondery-color);
 }
 
 .contact-list-item:not(:last-child) {
@@ -294,6 +295,14 @@ body {
 .title-3 {
   display: inline-block;
   margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-light-theme-color);
 }
 .title {
   font-weight: 700;
@@ -359,6 +368,16 @@ body {
   margin-right: 0px;
   margin-left: 0px;
   margin-bottom: 30px;
+}
+.subtitle-box-text {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-secondery-color);
 }
 .section-subtitle {
   padding-top: 94px;
