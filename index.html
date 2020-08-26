@@ -64,7 +64,14 @@
             эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="modal-btn">Заказать услугу</button>
+          <button class="modal-btn" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-btn-closed" data-modal-close>закрыть</button>
+              <b class="modal-invite">Оставьте свои данные, мы вам перезвоним</b>
+              <button class="">отправить</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -463,6 +470,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
