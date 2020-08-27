@@ -732,7 +732,9 @@ body {
 }
 .overlay:hover,
 .overlay:focus {
-  background-color: var(--accent-color);
+  /*background-color: var(--accent-color);*/
+  opacity: 1;
+  transform: translateY(0%);
 }
 .overlay-title {
   display: block;
