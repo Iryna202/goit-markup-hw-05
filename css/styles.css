@@ -106,6 +106,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-light-theme-color);
+  transition: 250ms var(--transition-timing-function);
 }
 .navigation-list-link.current,
 .navigation-list-link:hover,
@@ -153,19 +154,18 @@ body {
 .contact-list-item-link:hover,
 .contact-list-item-link:focus {
   color: var(--accent-color);
-  /*fill: var(--accent-color);*/
+  fill: var(--accent-color);
 }
 
-.contact-list-item-link svg:hover,
-.contact-list-item-link svg:focus {
+.contact-list-item-link:hover .contact-name,
+.contact-list-item-link:focus .contact-name {
   fill: var(--accent-color);
-  /*color: var(--accent-color);*/
+  color: var(--accent-color);
 }
 .contact-name {
-  display: block;
-  text-align: center;
   margin-right: 10px;
   fill: var(--title-secondery-color);
+  transition: 250ms var(--transition-timing-function);
 }
 
 .contact-list-item:not(:last-child) {
@@ -459,6 +459,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: 250ms var(--transition-timing-function);
 }
 .team-social-links-items {
   display: flex;
@@ -513,6 +514,7 @@ body {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: 250ms var(--transition-timing-function);
 }
 .client-mark-logo-svg {
   fill: #afb1b8;
@@ -618,6 +620,7 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms var(--transition-timing-function);
 }
 .social-link-list-mark-fotter-logo:focus,
 .social-link-list-mark-fotter-logo:hover {
@@ -650,10 +653,10 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-light-theme-color);
+  transition: 250ms var(--transition-timing-function);
 }
 .gallery-btn-items:not(:last-child) {
   margin-right: 8px;
@@ -669,14 +672,10 @@ body {
 
 .projects-list-container {
   display: flex;
-  /*width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;*/
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-  /*formyla/3*/
 }
 
 .projects-list-item {
@@ -730,6 +729,10 @@ body {
   height: 100%;
   cursor: pointer;
   transition: 250ms var(--transition-timing-function);
+}
+.overlay:hover,
+.overlay:focus {
+  background-color: var(--accent-color);
 }
 .overlay-title {
   display: block;
